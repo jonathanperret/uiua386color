@@ -15,9 +15,12 @@ build/Uiua386ColorSVG.ttf: Uiua386.ttf $(PICOSVGS) build/SVGs/pi.svg
 	venv/bin/addsvg -m build/SVGs build/svg.ttf
 	cp build/svg.ttf $@
 
-Uiua386Color.ttf: build/Uiua386ColorSVG.ttf
+build/Uiua386Color.ttf: build/Uiua386ColorSVG.ttf
 	venv/bin/maximum_color --output_file COLRv1.ttf $<
 	cp build/COLRv1.ttf $@
+
+Uiua386Color.ttf: build/Uiua386Color.ttf
+	venv/bin/python rename_font.py $< Uiua386Color $@
 
 Uiua386Color.woff2: Uiua386Color.ttf
 	venv/bin/fonttools ttLib $< --flavor woff2 -o $@
