@@ -3,10 +3,10 @@ from fontTools import ttLib
 
 GLYPHS = {
     "ed5e6a": "↫⚂ηπτ∞",  # noadic-function
-    "95d16a": "¬±¯`⌵√○⌊⌈⁅⧻△⇡⊢⇌♭¤⋯⍉⍏⍖⊚⊛◴◰□⋕",  # monadic-function
+    "95d16a": "¬±¯`⌵√○⌊⌈⁅⧻△⇡⊢⇌♭¤⋯⍏⍖⊚⊛◴◰□⋕",  # monadic-function except ⍉
     "54b0fc": "=≠<≤>≥+-×*÷%◿ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯☇↙↘↻◫▽⌕∊⊗",  # dyadic-function
-    "f0c36f": "/∧\\∵≡⊞⍥⊕⊜⊔⋅⊙∩°↬",  # monadic-modifier
-    "cc6be9": "⍤⍜⊃⊓⋔⍢⬚⍣",  # dyadic-modifier
+    "f0c36f": "/∧\\∵≡⊞⍥⊕⊜⊔⋅⊙°↬",  # monadic-modifier except ∩
+    "cc6be9": "⍤⍜⊃⊓⍢⬚⍣",  # dyadic-modifier except ⋔
     "11cc99": '$@"',  # string-literal
     "888888": "#",  # comment
 }
