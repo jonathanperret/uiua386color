@@ -7,7 +7,7 @@ build/SVGs/%.svg: glyphs/%.svg
 	mkdir -p build/SVGs
 	venv/bin/picosvg $< > $@
 
-build/SVGs/pi.svg: Uiua386.ttf
+build/SVGs/pi.svg: Uiua386.ttf extract_svgs.py
 	venv/bin/python extract_svgs.py
 
 build/Uiua386ColorSVG.ttf: Uiua386.ttf $(PICOSVGS) build/SVGs/pi.svg

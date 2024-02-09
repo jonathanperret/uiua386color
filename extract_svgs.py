@@ -7,6 +7,8 @@ GLYPHS = {
     "54b0fc": "=≠<≤>≥+-×*÷%◿ⁿₙ↧↥∠ℂ≍⊟⊂⊏⊡↯☇↙↘↻◫▽⌕∊⊗",  # dyadic-function
     "f0c36f": "/∧\\∵≡⊞⍥⊕⊜⊔⋅⊙∩°↬",  # monadic-modifier
     "cc6be9": "⍤⍜⊃⊓⋔⍢⬚⍣",  # dyadic-modifier
+    "11cc99": '$@"',  # string-literal
+    "888888": "#",  # comment
 }
 
 font = ttLib.TTFont("Uiua386.ttf")
