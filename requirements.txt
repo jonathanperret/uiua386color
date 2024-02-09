@@ -1,0 +1,2 @@
+git+https://github.com/googlefonts/nanoemoji
+opentypesvg==1.1.5
